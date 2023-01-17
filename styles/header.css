@@ -6,9 +6,10 @@ header {
     height: 42vh;
     width: 100%;
     background-color: black;
+    margin: 0 auto;
 }
 
-header h3 {
+header p {
     font-size: 14px;
     letter-spacing: 0.5px;
     color: aliceblue;
@@ -38,8 +39,8 @@ header div .sight {
 
 .divHeader {
     display: flex;
-    position: absolute;
-    top: -5px;
+    position: relative;
+    top: -286px;
     padding: 22px;
     flex-direction: column;
     align-items: center;
