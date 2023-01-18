@@ -1,16 +1,13 @@
-
-
 main {
-    width: 100%;
+
     background-color: #DDDDDD;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 10px 10px;
     gap: 5px;
-    max-width: 100%;
-    max-height: 100%;
-    
+
+
 }
 
 
@@ -43,48 +40,63 @@ main h1 {
     overflow-x: scroll;
     gap: 15px;
     padding: 10px 0px;
-    width: 100%;
-    height: 50%;
     color: black;
     background-color: #DDDDDD;
-    
+
 }
 
 main h1 {
     font-size: 18px;
 }
 
+.flex-icone {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 76px;
+    justify-content: center;
+    align-items: center;
+}
+
+.master-box {
+    display: flex;
+    width: 206px;
+    gap: 20px;
+
+}
+
+
 
 .box {
     padding: 0px 20px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    height: 250px;
-    width: 250px;
-    min-width: fit-content;
-    max-height: 100%;
+    height: 281px;
+    width: 206px;
 }
 
-.infos-name{
+
+.infos-name {
     display: flex;
-    flex-wrap: wrap;
-  
     flex-direction: column;
-    align-items: flex-end;
-    
+    align-items: center;
+    position: relative;
+    top: 26px;
+
 
 }
 
 .box .button-perfil {
     position: relative;
-    top: 36px;
-    border: 2px solid rgb(236, 155, 50);
-    background-color: rgb(236, 155, 50);
+    top: 14px;
+    border: 2px solid rgb(58, 117, 18);
+    background-color: rgb(58, 117, 18);
     color: aliceblue;
     width: 40px;
     height: 40px;
     border-radius: 5px;
-    
+    font-weight: 700;
+
 }
 
 
@@ -108,7 +120,7 @@ main h1 {
     font-size: 11px;
     font-weight: 100;
     letter-spacing: 1px;
-    top: 33px;
+    top: 38px;
 }
 
 .footer-card {
@@ -119,5 +131,71 @@ main h1 {
     border-radius: 5px;
     background-color: #000;
     position: relative;
-    top: 63px;
+    top: 60px;
+    left: 32px;
+}
+
+
+
+
+/* ******** MEDIA QUERY *********** */
+
+@media (min-width: 570px) {
+
+    main {
+
+        background-color: #DDDDDD;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        gap: 5px;
+        max-width: 100%;
+        align-items: center
+    }
+
+
+    main h1 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .section-first {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        padding: 10px 0px;
+        color: black;
+        background-color: #DDDDDD;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: scroll;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-secondary {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        padding: 10px 0px;
+        color: black;
+        background-color: #DDDDDD;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: scroll;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        padding: 0px 20px;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        height: 281px;
+        width: 206px;
+
+    }
+
 }
